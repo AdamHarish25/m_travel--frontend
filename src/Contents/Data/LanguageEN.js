@@ -1,3 +1,6 @@
+import Traveller from '../../Attachments/Image/Traveller.png';
+import Underline from '../../Attachments/Image/Underline.png';
+
 const DataEN = {
     Navbar: {
         menus: [
@@ -29,9 +32,11 @@ const DataEN = {
         title: {
             "1st": "Travel",
             "2nd": "enjoy",
-            underline: "",
-            "3rd": `and live a new and full life`
+            underline: Underline,
+            "3rd": `and live a new`,
+            "4th": "and full life",
         },
+        img: Traveller,
         paragraph: `Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.`,
         button: "Find out more",
         playButton: "Play Demo",

@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     fontFamily: {
       Poppins: [ "'Poppins'", "sans-serif" ],
+      Volkhov: [ "'Volkhov'", "serif" ],
     },
     screens: {
       xs: "0px",
@@ -29,6 +31,9 @@ module.exports = {
       },
       gridTemplateRows: {
         SL: "auto 1fr",
+      },
+      backgroundImage: {
+        HomeBG: "url('./Attachments/Image/HomeBG.png')",
       },
     },
   },
