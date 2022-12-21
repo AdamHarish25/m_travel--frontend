@@ -8,6 +8,7 @@ module.exports = {
     fontFamily: {
       Poppins: [ "'Poppins'", "sans-serif" ],
       Volkhov: [ "'Volkhov'", "serif" ],
+      OpenSans: [ "'Open Sans'", "sans-serif" ],
     },
     screens: {
       xs: "0px",
@@ -34,6 +35,7 @@ module.exports = {
       },
       backgroundImage: {
         HomeBG: "url('./Attachments/Image/HomeBG.png')",
+        OffersBG: "url('./Attachments/Image/pluses.png')",
       },
     },
   },

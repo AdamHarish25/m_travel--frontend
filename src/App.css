@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
@@ -642,8 +644,29 @@ video {
   top: 3rem !important;
 }
 
-.top-32{
-  top: 8rem !important;
+.right-16{
+  right: 4rem !important;
+}
+
+.top-10{
+  top: 2.5rem !important;
+}
+
+.left-0{
+  left: 0px !important;
+}
+
+.bottom-0{
+  bottom: 0px !important;
+}
+
+.-z-20{
+  z-index: -20 !important;
+}
+
+.my-40{
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
 }
 
 .flex{
@@ -666,10 +689,6 @@ video {
   height: auto !important;
 }
 
-.h-32{
-  height: 8rem !important;
-}
-
 .h-fit{
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
@@ -680,20 +699,16 @@ video {
   height: 0px !important;
 }
 
+.h-14{
+  height: 3.5rem !important;
+}
+
 .h-screen{
   height: 100vh !important;
 }
 
-.h-2{
-  height: 0.5rem !important;
-}
-
-.h-10{
-  height: 2.5rem !important;
-}
-
-.h-14{
-  height: 3.5rem !important;
+.h-full{
+  height: 100% !important;
 }
 
 .w-screen{
@@ -714,12 +729,13 @@ video {
   width: 30rem !important;
 }
 
-.w-10{
-  width: 2.5rem !important;
-}
-
 .w-14{
   width: 3.5rem !important;
+}
+
+.transform{
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 .resize{
@@ -736,10 +752,6 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-}
-
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }
 
 .flex-col{
@@ -802,6 +814,10 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse)) !important;
 }
 
+.overflow-x-hidden{
+  overflow-x: hidden !important;
+}
+
 .rounded-md{
   border-radius: 0.375rem !important;
 }
@@ -832,8 +848,8 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity)) !important;
 }
 
-.bg-gray-100\/40{
-  background-color: rgb(243 244 246 / 0.4) !important;
+.bg-white\/60{
+  background-color: rgb(255 255 255 / 0.6) !important;
 }
 
 .bg-transparent{
@@ -845,17 +861,14 @@ video {
   background-color: rgb(241 165 1 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-gray-200\/40{
-  background-color: rgb(229 231 235 / 0.4) !important;
-}
-
-.bg-\[\]{
-  background-color:  !important;
-}
-
 .bg-\[\#DF6951\]{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(223 105 81 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-white{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-HomeBG{
@@ -890,10 +903,6 @@ video {
   padding: 0px !important;
 }
 
-.p-3{
-  padding: 0.75rem !important;
-}
-
 .py-2{
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -924,16 +933,6 @@ video {
   padding-right: 2.5rem !important;
 }
 
-.py-4{
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
-.px-0{
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
 .py-3{
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
@@ -958,6 +957,10 @@ video {
 
 .font-Volkhov{
   font-family: 'Volkhov', serif !important;
+}
+
+.font-OpenSans{
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .text-2xl{
@@ -985,6 +988,11 @@ video {
   line-height: 1.25rem !important;
 }
 
+.text-4xl{
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+}
+
 .text-lg{
   font-size: 1.125rem !important;
   line-height: 1.75rem !important;
@@ -998,12 +1006,12 @@ video {
   font-weight: 500 !important;
 }
 
-.font-extrabold{
-  font-weight: 800 !important;
-}
-
 .font-black{
   font-weight: 900 !important;
+}
+
+.font-semibold{
+  font-weight: 600 !important;
 }
 
 .text-black{
@@ -1036,9 +1044,14 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
 }
 
-.text-amber-600{
+.text-\[\#1E1D4C\]{
   --tw-text-opacity: 1 !important;
-  color: rgb(217 119 6 / var(--tw-text-opacity)) !important;
+  color: rgb(30 29 76 / var(--tw-text-opacity)) !important;
+}
+
+.text-\[\#5E6282\]{
+  --tw-text-opacity: 1 !important;
+  color: rgb(94 98 130 / var(--tw-text-opacity)) !important;
 }
 
 .underline{
@@ -1051,6 +1064,12 @@ video {
 
 .opacity-0{
   opacity: 0 !important;
+}
+
+.shadow-none{
+  --tw-shadow: 0 0 #0000 !important;
+  --tw-shadow-colored: 0 0 #0000 !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 .backdrop-blur-sm{
@@ -1075,6 +1094,36 @@ video {
   transition-duration: 300ms !important;
 }
 
+.duration-200{
+  transition-duration: 200ms !important;
+}
+
+.hover\:shadow-lg:hover{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.group:hover .group-hover\:visible{
+  visibility: visible !important;
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1 !important;
+}
+
+.group:hover .group-hover\:shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.group:hover .group-hover\:shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
 @media (min-width: 1025px){
   .lg\:place-items-center{
     place-items: center !important;
@@ -1094,8 +1143,16 @@ video {
     display: none !important;
   }
 
-  .xl\:place-items-center{
-    place-items: center !important;
+  .xl\:h-screen{
+    height: 100vh !important;
+  }
+
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .xl\:gap-5{
+    gap: 1.25rem !important;
   }
 
   .xl\:space-y-8 > :not([hidden]) ~ :not([hidden]){
@@ -1106,16 +1163,6 @@ video {
 
   .xl\:p-5{
     padding: 1.25rem !important;
-  }
-
-  .xl\:py-28{
-    padding-top: 7rem !important;
-    padding-bottom: 7rem !important;
-  }
-
-  .xl\:py-4{
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
   }
 
   .xl\:text-lg{
@@ -1129,6 +1176,13 @@ video {
   }
 
   .xl\:text-base{
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1806px){
+  .\32xl\:text-base{
     font-size: 1rem !important;
     line-height: 1.5rem !important;
   }
