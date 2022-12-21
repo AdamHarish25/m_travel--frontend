@@ -36,6 +36,7 @@ module.exports = {
       backgroundImage: {
         HomeBG: "url('./Attachments/Image/HomeBG.png')",
         OffersBG: "url('./Attachments/Image/pluses.png')",
+        Underline: "url('./Attachments/Image/Underline.png')",
       },
     },
   },

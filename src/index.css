@@ -6,3 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-center-down-84{
+    background-position: 50% 84%;
+}

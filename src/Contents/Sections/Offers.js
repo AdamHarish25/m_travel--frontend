@@ -6,7 +6,7 @@ const Offers = () => {
     const Data = DataEN.Offers;
 
     const className = {
-        container: "w-screen h-auto xl:h-screen my-40 p-10 relative",
+        container: "w-screen h-auto xl:h-screen mt-40 p-10 relative",
         title: "font-Volkhov font-bold text-4xl text-center",
         sectionTitle: "font-Poppins font-semibold text-sm text-gray-500",
         plusesImg: "absolute right-16 top-10",
@@ -34,7 +34,7 @@ const Offers = () => {
                         return (
                             <div key={ index } className={ className.cardBox }>
                                 <div className={ className.card }>
-                                    <img src={ img } alt={ title } />
+                                    <img draggable={ false } src={ img } alt={ title } />
                                     <h1 className={ className.cardTitle }>
                                         { title }
                                     </h1>
