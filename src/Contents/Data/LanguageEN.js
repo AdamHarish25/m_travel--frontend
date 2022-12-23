@@ -5,6 +5,10 @@ import Offer1 from '../../Attachments/Image/OfferCard/Offer1.png';
 import Offer2 from '../../Attachments/Image/OfferCard/Offer2.png';
 import Offer3 from '../../Attachments/Image/OfferCard/Offer3.png';
 import Offer4 from '../../Attachments/Image/OfferCard/Offer4.png';
+import Destination1 from '../../Attachments/Image/DestinationCard/Destination1.png';
+import Destination2 from '../../Attachments/Image/DestinationCard/Destination2.png';
+import Destination3 from '../../Attachments/Image/DestinationCard/Destination3.png';
+
 
 const DataEN = {
 
@@ -76,6 +80,31 @@ const DataEN = {
                 subtitle: "We deliver outsourced aviation services for military customers",
                 img: Offer4,
                 rectangle: Rectangle,
+            },
+        ]
+    },
+
+    Destination: {
+        sectionTitle: "Top Selling",
+        title: "Top Destinations",
+        cards: [
+            {
+                img: Destination1,
+                place: "Rome, Italy",
+                price: "5,42k",
+                tripDuration: "10 days trip",
+            },
+            {
+                img: Destination2,
+                place: "London, UK",
+                price: "4.2k",
+                tripDuration: "12 days trip",
+            },
+            {
+                img: Destination3,
+                place: "Full Europe",
+                price: "15k",
+                tripDuration: "28 days trip",
             },
         ]
     }
