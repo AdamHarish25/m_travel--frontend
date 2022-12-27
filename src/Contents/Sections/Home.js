@@ -15,7 +15,7 @@ const Home = () => {
         underlinedWord: "w-[400px] h-auto bg-Underline bg-center-down-84 bg-no-repeat bg-contain",
         underline: "absolute inset-x-0 top-12 xl:top-16 w-full",
         paragraph: "font-medium text-gray-400 w-[30rem] text-sm xl:text-base",
-        buttonBox: "grid grid-cols-2",
+        buttonBox: "grid grid-cols-2 gap-4",
         button: "w-fit py-3 px-4 rounded-xl bg-[#F1A501] text-white font-medium hover:shadow-lg transform duration-200",
         playButtonBox: "w-fit flex items-center gap-5 font-medium text-gray-500 group",
         playButton: "w-14 h-14 grid place-items-center text-xl text-white bg-[#DF6951] rounded-full group-hover:shadow-lg transform duration-200",

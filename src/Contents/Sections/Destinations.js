@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import DataEN from "../Data/LanguageEN";
 import Swirl from '../../Attachments/Image/Swirl.png';
 import { FaLocationArrow } from 'react-icons/fa'
@@ -7,12 +9,12 @@ const Destinations = () => {
     const Data = DataEN.Destination
 
     const className = {
-        container: "w-screen h-auto mt-32 p-10",
+        container: "w-screen h-auto mt-32 p-10 space-y-10",
         title: "font-Volkhov font-bold text-4xl text-center",
         sectionTitle: "font-Poppins font-semibold text-sm text-gray-500",
         cardDeck: "w-full h-auto grid grid-cols-3 gap-10 place-items-center relative",
-        cardBox: "w-full h-full p-7 xl:p-10",
-        card: "w-full h-full rounded-3xl hover:shadow-xl shadow-md bg-white flex flex-col justify-center items-center gap-5 pb-10 group",
+        cardBox: "w-full h-full p-0 xl:p-9",
+        card: "w-full h-full rounded-3xl hover:shadow-2xl shadow-md bg-white flex flex-col justify-center items-center gap-5 pb-10 group transform duration-300 cursor-pointer",
         background: "absolute right-0 bottom-10 -z-30",
         img: "h-full w-full rounded-t-3xl",
         description: "w-full h-auto px-6 xl:px-10 font-Poppins space-y-5 text-sm xl:text-base",

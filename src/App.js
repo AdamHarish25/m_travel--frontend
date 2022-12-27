@@ -1,5 +1,6 @@
 import Navbar from './Contents/Components/Navbar';
 import { useViewport } from './Contents/Components/Viewport';
+import BookingTrip from './Contents/Sections/BookingTrip';
 import Destinations from './Contents/Sections/Destinations';
 import Home from './Contents/Sections/Home';
 import MobileWarning from './Contents/Sections/mobileWarning';
@@ -15,11 +16,12 @@ function App () {
       <MobileWarning/>
     </div>
   ) : (
-    <div id=">=Tablet" className='relative overflow-x-hidden'>
+    <div id=">=Tablet" className='relative overflow-hidden'>
 
         <Home />
         <Offers />
-        <Destinations/>
+        <Destinations />
+        <BookingTrip />
         
         <Navbar />
     </div>
