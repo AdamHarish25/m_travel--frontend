@@ -11,6 +11,8 @@ import Destination3 from "../../Attachments/Image/DestinationCard/Destination3.p
 import List1 from "../../Attachments/Image/BookingTripList/List1.png";
 import List2 from "../../Attachments/Image/BookingTripList/List2.png";
 import List3 from "../../Attachments/Image/BookingTripList/List3.png";
+import user1 from '../../Attachments/Image/Carousel/user1.png';
+import user2 from '../../Attachments/Image/Carousel/user2.png';
 
 const DataEN = {
   Navbar: {
@@ -136,6 +138,25 @@ const DataEN = {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.",
       },
     ],
+  },
+
+  Testimonials: {
+    sectionTitle: "TESTIMONIALS",
+    title: "What People Say About Us",
+    carousel: [
+      {
+        comment: "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
+        user: "Mike Taylor",
+        location: "Lahore, Pakistan",
+        userPic: user1,
+      },
+      {
+        comment: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit etiam id felis ac arcu.”",
+        user: "Chris Thomas",
+        location: "CEO of Red Button",
+        userPic: user2,
+      },
+    ]
   },
 };
 

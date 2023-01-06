@@ -5,6 +5,7 @@ import Destinations from './Contents/Sections/Destinations';
 import Home from './Contents/Sections/Home';
 import MobileWarning from './Contents/Sections/mobileWarning';
 import Offers from './Contents/Sections/Offers';
+import Testimonial from './Contents/Sections/Testimonial';
 
 function App () {
   
@@ -22,6 +23,7 @@ function App () {
         <Offers />
         <Destinations />
         <BookingTrip />
+        <Testimonial/>
         
         <Navbar />
     </div>
