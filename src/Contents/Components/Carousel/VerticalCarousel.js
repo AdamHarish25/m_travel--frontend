@@ -11,8 +11,9 @@ const VerticalCarousel = ({ data }) => {
         itemsContainer: "flex flex-col items-center",
         carouselItem: "p-0 m-0 transition-all w-full duration-700",
         card: {
-            container: "w-[550px] 2xl:w-[600px] rounded-2xl shadow-xl space-y-7 font-Poppins text-black",
+            container: "w-[550px] 2xl:w-[600px] rounded-2xl shadow-xl space-y-7 font-Poppins text-black relative",
             footer: "flex flex-col gap-1",
+            img: "w-14 h-14 rounded-full absolute left-0 top-0 object-cover",
         },
         buttonContainer: "w-fit h-full gap flex flex-col items-center justify-center gap-3",
         prevButtons: `w-10 h-10 rounded-full grid place-items-center shadow-md ${ currentIndex === 0 ? "text-gray-300" : "text-black" }`,
@@ -41,7 +42,8 @@ const VerticalCarousel = ({ data }) => {
                             className={ `${ className.carouselItem } ${ isCurrent ? "opacity-100 visible" : "opacity-0 invisible" }` }
                             style={ { transform: `translateY(-${currentIndex}%)` }}
                         >
-                            <div className={`${className.card.container} ${isCurrent ? "h-fit p-12 opacity-100" : "h-0 p-0 opacity-0"}`}>
+                            <div className={ `${ className.card.container } ${ isCurrent ? "h-fit p-12 opacity-100" : "h-0 p-0 opacity-0" }` }>
+                                <img src={ item.userPic } alt={ `${ item.user }'s Profile Picture` } className={ className.card.img }/>
                                 <p>
                                     {
                                         item.comment
