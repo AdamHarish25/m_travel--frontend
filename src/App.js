@@ -1,6 +1,7 @@
 import Navbar from './Contents/Components/Navbar';
 import { useViewport } from './Contents/Components/Viewport';
 import BookingTrip from './Contents/Sections/BookingTrip';
+import Brands from './Contents/Sections/Brands';
 import Destinations from './Contents/Sections/Destinations';
 import Home from './Contents/Sections/Home';
 import MobileWarning from './Contents/Sections/mobileWarning';
@@ -23,7 +24,8 @@ function App () {
         <Offers />
         <Destinations />
         <BookingTrip />
-        <Testimonial/>
+        <Testimonial />
+        <Brands />
         
         <Navbar />
     </div>

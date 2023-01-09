@@ -1,4 +1,4 @@
-import VerticalCarousel from "../Components/Carousel/VerticalCarousel";
+import VerticalCarousel from "../Components/VerticalCarousel";
 import DataEN from "../Data/LanguageEN";
 
 const Testimonial = () => {
@@ -18,7 +18,7 @@ const Testimonial = () => {
                     {Data.sectionTitle}
                 </p>
                 <h1 className={className.title}>
-                    {Data.title}
+                    {Data.title}<span className="text-6xl">.</span>
                 </h1>
             </div>
             <div className={className.carouselBox}>

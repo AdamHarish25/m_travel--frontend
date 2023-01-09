@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import {FaChevronDown as Next, FaChevronUp as Prev} from 'react-icons/fa'
-import "./Carousel.css";
 
 const VerticalCarousel = ({ data }) => {
     const [ currentIndex, setCurrentIndex ] = useState(0);

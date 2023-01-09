@@ -13,6 +13,12 @@ import List2 from "../../Attachments/Image/BookingTripList/List2.png";
 import List3 from "../../Attachments/Image/BookingTripList/List3.png";
 import user1 from '../../Attachments/Image/Carousel/user1.png';
 import user2 from '../../Attachments/Image/Carousel/user2.png';
+import brand1 from '../../Attachments/Image/Brands/brand1.png';
+import brand2 from '../../Attachments/Image/Brands/brand2.png';
+import brand3 from '../../Attachments/Image/Brands/brand3.png';
+import brand4 from '../../Attachments/Image/Brands/brand4.png';
+import brand5 from '../../Attachments/Image/Brands/brand5.png';
+
 
 const DataEN = {
   Navbar: {
@@ -158,6 +164,30 @@ const DataEN = {
       },
     ]
   },
+
+  Brands: [
+    {
+      src: brand1,
+      alt: "Axon Flight Service",
+    },
+    {
+      src: brand2,
+      alt: "Jetstar Flight Service",
+    },
+    {
+      src: brand3,
+      alt: "Expedia Flight Service",
+    },
+    {
+      src: brand4,
+      alt: "Qantas Flight Service",
+    },
+    {
+      src: brand5,
+      alt: "Alitalia Flight Service",
+    },
+
+  ]
 };
 
 export default DataEN;
