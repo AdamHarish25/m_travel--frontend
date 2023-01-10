@@ -1,18 +1,24 @@
 import Traveller from "../../Attachments/Image/Traveller.png";
 import Underline from "../../Attachments/Image/Underline.png";
+
 import Rectangle from "../../Attachments/Image/Rectangle.png";
+
 import Offer1 from "../../Attachments/Image/OfferCard/Offer1.png";
 import Offer2 from "../../Attachments/Image/OfferCard/Offer2.png";
 import Offer3 from "../../Attachments/Image/OfferCard/Offer3.png";
 import Offer4 from "../../Attachments/Image/OfferCard/Offer4.png";
+
 import Destination1 from "../../Attachments/Image/DestinationCard/Destination1.png";
 import Destination2 from "../../Attachments/Image/DestinationCard/Destination2.png";
 import Destination3 from "../../Attachments/Image/DestinationCard/Destination3.png";
+
 import List1 from "../../Attachments/Image/BookingTripList/List1.png";
 import List2 from "../../Attachments/Image/BookingTripList/List2.png";
 import List3 from "../../Attachments/Image/BookingTripList/List3.png";
+
 import user1 from '../../Attachments/Image/Carousel/user1.png';
 import user2 from '../../Attachments/Image/Carousel/user2.png';
+
 import brand1 from '../../Attachments/Image/Brands/brand1.png';
 import brand2 from '../../Attachments/Image/Brands/brand2.png';
 import brand3 from '../../Attachments/Image/Brands/brand3.png';
@@ -168,26 +174,34 @@ const DataEN = {
   Brands: [
     {
       src: brand1,
-      alt: "Axon Flight Service",
+      alt: "Axon\u2122 Flight Service",
     },
     {
       src: brand2,
-      alt: "Jetstar Flight Service",
+      alt: "Jetstar\u2122 Flight Service",
     },
     {
       src: brand3,
-      alt: "Expedia Flight Service",
+      alt: "Expedia\u2122 Flight Service",
     },
     {
       src: brand4,
-      alt: "Qantas Flight Service",
+      alt: "Qantas\u2122 Flight Service",
     },
     {
       src: brand5,
-      alt: "Alitalia Flight Service",
+      alt: "Alitalia\u2122 Flight Service",
     },
+  ],
 
-  ]
+  Subcription: {
+    title: <>
+      Subscribe to get information, latest news and other <br/>
+      interesting offers about Cobham
+    </>,
+    placeholder: "Your Email",
+    background: "",
+  }
 };
 
 export default DataEN;

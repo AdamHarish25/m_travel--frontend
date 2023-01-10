@@ -7,6 +7,7 @@ import Home from './Contents/Sections/Home';
 import MobileWarning from './Contents/Sections/mobileWarning';
 import Offers from './Contents/Sections/Offers';
 import Testimonial from './Contents/Sections/Testimonial';
+import Subcription from './Contents/Sections/Subscription';
 
 function App () {
   
@@ -26,6 +27,7 @@ function App () {
         <BookingTrip />
         <Testimonial />
         <Brands />
+        <Subcription />
         
         <Navbar />
     </div>
