@@ -25,6 +25,7 @@ import brand3 from '../../Attachments/Image/Brands/brand3.png';
 import brand4 from '../../Attachments/Image/Brands/brand4.png';
 import brand5 from '../../Attachments/Image/Brands/brand5.png';
 
+import {FaApple, FaGooglePlay} from 'react-icons/fa'
 
 const DataEN = {
   Navbar: {
@@ -201,6 +202,81 @@ const DataEN = {
     </>,
     placeholder: "Your Email",
     background: "",
+  },
+
+  Footer: {
+    logo: "M Travel.",
+    subtitle: `Book your trip in minute, get full Control for much longer.`,
+
+    menus: [
+      {
+        title: "Company",
+        list: [
+          {
+            menu: "About",
+            link: "",
+          },
+          {
+            menu: "Careers",
+            link: ""
+          },
+          {
+            menu: "Mobile",
+            link: ""
+          }
+        ],
+      },
+      {
+        title: "Contact",
+        list: [
+          {
+            menu: "Help/FAQ",
+            link: "",
+          },
+          {
+            menu: "Press",
+            link: ""
+          },
+          {
+            menu: "Affilates",
+            link: ""
+          }
+        ],
+      },
+      {
+        title: "More",
+        list: [
+          {
+            menu: "Airlinefees",
+            link: "",
+          },
+          {
+            menu: "Airline",
+            link: ""
+          },
+          {
+            menu: "Low fare tips",
+            link: ""
+          }
+        ],
+      },
+    ],
+      
+    promotion: "Discover Our App",
+    downloadButton: [
+      {
+        icon: <FaGooglePlay/>,
+        p1: "GET IT ON",
+        p2: "GOOGLE PLAY",
+      },
+      {
+        icon: <FaApple />,
+        p1: "Available on the",
+        p2: <strong>Apple Store</strong>,
+      }
+    ],
+
+    copyright: "All rights reserved@mtravel.co",
   }
 };
 

@@ -8,6 +8,7 @@ import MobileWarning from './Contents/Sections/mobileWarning';
 import Offers from './Contents/Sections/Offers';
 import Testimonial from './Contents/Sections/Testimonial';
 import Subcription from './Contents/Sections/Subscription';
+import Footer from './Contents/Sections/Footer';
 
 function App () {
   
@@ -28,6 +29,7 @@ function App () {
         <Testimonial />
         <Brands />
         <Subcription />
+        <Footer />
         
         <Navbar />
     </div>

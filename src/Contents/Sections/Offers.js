@@ -10,6 +10,7 @@ const Offers = () => {
         title: "font-Volkhov font-bold text-4xl text-center",
         sectionTitle: "font-Poppins font-semibold text-sm text-gray-500",
         plusesImg: "absolute right-16 top-10",
+        
         cardDeck: "w-full h-auto grid grid-cols-2 gap-10 xl:grid-cols-4 xl:gap-5 place-items-center",
         cardBox: "p-10 w-full h-full relative group",
         card: "h-full w-full rounded-xl group-hover:shadow-xl shadow-none bg-white flex flex-col gap-5 items-center justify-center text-center p-10",
