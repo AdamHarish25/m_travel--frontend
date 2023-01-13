@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoIosSend } from 'react-icons/io';
 import background from '../../Attachments/Image/TwistedPluses.png'
 import DataEN from '../Data/LanguageEN';
 
 const Subcription = () => {
+    const [ email, setEmail ] = useState("");
     const Data = DataEN.Subcription
 
     const className = {
@@ -20,6 +22,7 @@ const Subcription = () => {
         }
     };
 
+    console.log(email)
     return (
         <div className={className.container}>
             <img src={ background } alt="pluses background" className={ className.background } />
@@ -30,12 +33,12 @@ const Subcription = () => {
                 <h1 className={className.card.title}>
                     {Data.title}
                 </h1>
-                <form className={className.card.form}>
+                <form action={`mailto:ampmtamzil@gmail.com`} method={"GET"} className={className.card.form}>
                     <div className={className.card.formInput}>
                         <HiOutlineMail /> 
-                        <input className={ className.card.input } type={"email"} placeholder={Data.placeholder} />
+                        <input className={ className.card.input } type={"email"} placeholder={Data.placeholder} value={email} onChange={e => setEmail(e.target.email)} />
                     </div>
-                    <button className={className.card.submitButton}>Submit</button>
+                    <button type={'submit'} className={className.card.submitButton} >Submit</button>
                 </form>
             </div>
         </div>

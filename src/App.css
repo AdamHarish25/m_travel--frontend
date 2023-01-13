@@ -846,10 +846,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }
 
-.grid-cols-SL{
-  grid-template-columns: auto 1fr !important;
-}
-
 .flex-col{
   flex-direction: column !important;
 }
@@ -868,6 +864,10 @@ video {
 
 .items-center{
   align-items: center !important;
+}
+
+.justify-start{
+  justify-content: flex-start !important;
 }
 
 .justify-end{
@@ -1003,6 +1003,10 @@ video {
   border-width: 1px !important;
 }
 
+.border-t-2{
+  border-top-width: 2px !important;
+}
+
 .border-gray-600{
   --tw-border-opacity: 1 !important;
   border-color: rgb(75 85 99 / var(--tw-border-opacity)) !important;
@@ -1011,6 +1015,10 @@ video {
 .border-black{
   --tw-border-opacity: 1 !important;
   border-color: rgb(0 0 0 / var(--tw-border-opacity)) !important;
+}
+
+.border-gray-400\/40{
+  border-color: rgb(156 163 175 / 0.4) !important;
 }
 
 .bg-white\/60{
@@ -1168,11 +1176,6 @@ video {
   padding-right: 1.5rem !important;
 }
 
-.py-1{
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-}
-
 .px-4{
   padding-left: 1rem !important;
   padding-right: 1rem !important;
@@ -1208,8 +1211,34 @@ video {
   padding-bottom: 1rem !important;
 }
 
+.px-1{
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+}
+
+.py-20{
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
 .pb-10{
   padding-bottom: 2.5rem !important;
+}
+
+.pt-20{
+  padding-top: 5rem !important;
+}
+
+.pt-40{
+  padding-top: 10rem !important;
+}
+
+.pt-32{
+  padding-top: 8rem !important;
+}
+
+.pt-28{
+  padding-top: 7rem !important;
 }
 
 .text-center{
@@ -1266,23 +1295,23 @@ video {
   font-size: 13px !important;
 }
 
-.text-lg{
-  font-size: 1.125rem !important;
-  line-height: 1.75rem !important;
+.text-base{
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
 }
 
 .text-\[9px\]{
   font-size: 9px !important;
 }
 
-.text-base{
-  font-size: 1rem !important;
-  line-height: 1.5rem !important;
-}
-
 .text-5xl{
   font-size: 3rem !important;
   line-height: 1 !important;
+}
+
+.text-lg{
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
 }
 
 .text-6xl{
@@ -1515,13 +1544,69 @@ video {
 }
 
 @media (min-width: 1025px){
+  .lg\:w-full{
+    width: 100% !important;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
   .lg\:place-items-center{
     place-items: center !important;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between !important;
+  }
+
+  .lg\:gap-5{
+    gap: 1.25rem !important;
+  }
+
+  .lg\:gap-0{
+    gap: 0px !important;
+  }
+
+  .lg\:border-t-0{
+    border-top-width: 0px !important;
+  }
+
+  .lg\:p-10{
+    padding: 2.5rem !important;
+  }
+
+  .lg\:p-5{
+    padding: 1.25rem !important;
   }
 
   .lg\:px-10{
     padding-left: 2.5rem !important;
     padding-right: 2.5rem !important;
+  }
+
+  .lg\:px-5{
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .lg\:py-10{
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .lg\:text-start{
+    text-align: start !important;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
   }
 }
 
@@ -1570,6 +1655,10 @@ video {
     justify-content: flex-start !important;
   }
 
+  .xl\:justify-between{
+    justify-content: space-between !important;
+  }
+
   .xl\:gap-5{
     gap: 1.25rem !important;
   }
@@ -1584,6 +1673,10 @@ video {
     padding: 2.25rem !important;
   }
 
+  .xl\:p-10{
+    padding: 2.5rem !important;
+  }
+
   .xl\:p-5{
     padding: 1.25rem !important;
   }
@@ -1594,10 +1687,6 @@ video {
 
   .xl\:p-20{
     padding: 5rem !important;
-  }
-
-  .xl\:p-10{
-    padding: 2.5rem !important;
   }
 
   .xl\:px-10{
@@ -1624,14 +1713,14 @@ video {
     line-height: 1.75rem !important;
   }
 
-  .xl\:text-6xl{
-    font-size: 3.75rem !important;
-    line-height: 1 !important;
-  }
-
   .xl\:text-xl{
     font-size: 1.25rem !important;
     line-height: 1.75rem !important;
+  }
+
+  .xl\:text-6xl{
+    font-size: 3.75rem !important;
+    line-height: 1 !important;
   }
 }
 
