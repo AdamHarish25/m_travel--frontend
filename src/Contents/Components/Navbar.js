@@ -11,9 +11,9 @@ const Navbar = () => {
     const Data = DataEN.Navbar;
 
     const className = {
-        container: `w-screen font-Poppins absolute top-0 inset-x-0`,
+        container: `w-screen font-Poppins absolute top-0 inset-x-0 ${ isOpen ? "bg-white/60" : "bg-transparent" } transition-colors duration-300`,
         desktop: "w-full grid-cols-3 place-items-center gap-20 hidden xl:grid p-10",
-        mobile: `w-full flex items-center justify-between xl:hidden relative p-10 ${ isOpen ? "h-auto" : "h-fit"}`,
+        mobile: `w-full flex items-center justify-between xl:hidden relative p-10 ${ isOpen ? "h-auto" : "h-fit" }`,
         box1: "flex items-center justify-end",
         brandLogo: "py-2 px-3 border border-gray-600 font-bold text-2xl rounded-md",
         box2: "flex items-center justify-center",
@@ -22,7 +22,7 @@ const Navbar = () => {
         b: "w-full py-2 px-5 border border-black rounded-lg",
         b3: "flex items-center gap-3",
         mobileButton: "w-fit h-fit text-xl text-black",
-        mobileMenu: `py-10 w-full absolute top-28 inset-x-0 grid grid-cols-2 place-items-center gap-5 transition-opacity duration-300 ${ isOpen ? "h-auto opacity-100 visible backdrop-blur-sm bg-white/60" : "h-0 opacity-0 invisible backdrop-blur-none bg-transparent"}`,
+        mobileMenu: `py-10 w-full absolute top-32 inset-x-0 grid grid-cols-2 place-items-center gap-5 transition-opacity transform-gpu duration-300 ${ isOpen ? "h-auto opacity-100 visible backdrop-blur-sm bg-white/60" : "h-0 opacity-0 invisible backdrop-blur-none bg-transparent" }`,
         mobileNavigation: "font-medium list-none space-y-10 text-start",
         buttonBox: "w-fit h-auto p-5 space-y-5 flex flex-col items-start font-medium",
     };
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <button className={ className.b }>
                         { Data.button.b2 }
                     </button>
-                    <button onClick={() => setOpenDropdown(!openDropdown)} className={ className.b3 }>
+                    <button onClick={ () => setOpenDropdown(!openDropdown) } className={ className.b3 }>
                         { Data.button.b3 } { openDropdown ? <HiChevronUp /> : <HiChevronDown /> }
                     </button>
                 </div>
@@ -59,19 +59,19 @@ const Navbar = () => {
 
             <div className={ className.mobile }>
                 <a href="#" className={ className.brandLogo }>M TRAVEL</a>
-                <button onClick={() => setIsOpen(!isOpen)} className={className.mobileButton}>
+                <button onClick={ () => setIsOpen(!isOpen) } className={ className.mobileButton }>
                     <HiMenu />
                 </button>
 
-                <div className={className.mobileMenu}>
-                    <ul className={className.mobileNavigation}>
+                <div className={ className.mobileMenu }>
+                    <ul className={ className.mobileNavigation }>
                         { Data.menus.map((data, index) => {
                             return <li key={ index }>
                                 <a href={ data.url }>{ data.title }</a>
                             </li>;
                         }) }
                     </ul>
-                    
+
                     <div className={ className.buttonBox }>
                         <button className={ className.b }>
                             { Data.button.b1 }

@@ -125,6 +125,18 @@ const DataEN = {
         price: "15k",
         tripDuration: "28 days trip",
       },
+      {
+        img: Destination2,
+        place: "London, UK",
+        price: "4.2k",
+        tripDuration: "12 days trip",
+      },
+      {
+        img: Destination3,
+        place: "Full Europe",
+        price: "15k",
+        tripDuration: "28 days trip",
+      },
     ],
   },
 
